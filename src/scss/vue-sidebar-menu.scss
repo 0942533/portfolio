@@ -1,0 +1,78 @@
+@import './var.scss';
+.v-sidebar-menu {
+  & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s width;
+  }
+
+  & .vsm-item.first-item {
+    & > .vsm-link {
+      & > .vsm-icon {
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 3px;
+      }
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+  }
+
+  & .vsm-link {
+    position: relative;
+    display: block;
+    font-size: 13.5px;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 30px;
+    text-decoration: none;
+    z-index: 20;
+    transition: 0.3s all;
+  }
+  
+  & .vsm-icon {
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+ 
+  & .slide-animation-enter-active {
+    animation: slide-animation 0.2s;
+  }
+  & .slide-animation-leave-active {
+    animation: slide-animation 0.2s reverse;
+  }
+  @keyframes slide-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  & .collapse-btn {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    height: 50px;
+    left: 0;
+    right: 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+  }
+}
+
+@import './themes/default-theme.scss';
+@import './themes/white-theme.scss';
