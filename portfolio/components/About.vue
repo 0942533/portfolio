@@ -1,11 +1,11 @@
 <template>
-   <full-page :options="options">
+   <section>
       <div class="section">
         <div class="fullscreen-video-wrap">
           <div class="arrow bounce">
             <li class="fa fa-arrow-down fa-2x" href="#"></li>
           </div>
-          <video src="portfolio/images/timelapse.mp4" autoplay="true" loop="true"></video>
+          <video src="/src/img/timelapse.mp4" autoplay="true" loop="true"></video>
         </div>
       </div>
 
@@ -16,12 +16,28 @@
             <b-col sm="3" id="h1"><h1>Over <br>mij..</h1></b-col>
             <b-col sm="1"><div id="vl"></div></b-col>
             <b-col sm="8"  id="p" >
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
-              dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim.
+              <p>
+                Mijn naam is Lotte Arnoldussen. Ik ben een 22 jarige Creative Media and Game Technologies(CMGT) 
+                student aan de Hogeschool Rotterdam.<br /><br />
 
-              <img src="portfolio/images/signature.png">
+                Op de open dag van de opleiding CMGT presenteerde een aantal studenten hun web applicaties die 
+                ze tijdens hun stage hadden ontwikkeld. Met name de dynamische web applicaties trokken meteen 
+                mijn aandacht.<br /><br />
+
+                De krachtige animaties ondersteunden het verhaal, waardoor voor mij als bezoeker de boodschap en 
+                de sfeer die het bedrijf wilde overdragen meteen duidelijk werd. Daarnaast maakten de verassende 
+                en speelse animaties bij de overgang van een pagina mij nieuwsgierig. Hierdoor bleef ik automatisch 
+                langer op de web applicatie hangen.<br /><br />
+
+                Het creëren van een soortgelijke ervaring met behulp van een web applicatie en animaties wekt mijn 
+                interesse.<br /><br />
+
+                <strong>Stage wensen</strong><br />
+                Momenteel ben ik dan ook op zoek naar een leuke stageplek waarbij ik mijzelf kan ontwikkelen
+                op het gebied van front-end. Ik zou meer willen leren over animaties, UX design en web applicaties in 
+                het algemeen.<br />
+
+                <img src="/src/img/signature.png">
               </p>
             </b-col>
           </b-row>
@@ -35,27 +51,47 @@
             <b-col sm="12" id="h2"><h2>Over mij</h2></b-col>
             <b-col sm="1"><div id="vl"></div></b-col>
             <b-col sm="12"  id="p" >
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
-              dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim.<br>
+              <p>
+                Mijn naam is Lotte Arnoldussen. Ik ben een 22 jarige Creative Media and Game Technologies(CMGT) 
+                student aan de Hogeschool Rotterdam.<br /><br />
 
-              <img src="portfolio/images/signature.png">
+                Op de open dag van de opleiding CMGT presenteerde een aantal studenten hun web applicaties die 
+                ze tijdens hun stage hadden ontwikkeld. Met name de dynamische web applicaties trokken meteen 
+                mijn aandacht.<br /><br />
+
+                De krachtige animaties ondersteunden het verhaal, waardoor voor mij als bezoeker de boodschap en 
+                de sfeer die het bedrijf wilde overdragen meteen duidelijk werd. Daarnaast maakten de verassende 
+                en speelse animaties bij de overgang van een pagina mij nieuwsgierig. Hierdoor bleef ik automatisch 
+                langer op de web applicatie hangen.<br /><br />
+
+                Het creëren van een soortgelijke ervaring met behulp van een web applicatie en animaties wekt mijn 
+                interesse.<br /><br />
+
+                <strong>Stage wensen</strong><br />
+                Momenteel ben ik dan ook op zoek naar een leuke stageplek waarbij ik mijzelf kan ontwikkelen
+                op het gebied van front-end. Ik zou meer willen leren over animaties, UX design en web applicaties in 
+                het algemeen.<br />
+
+                <img src="/src/img/signature.png">
               </p>
             </b-col>
           </b-row>
         </b-container>
       </div>
-  </full-page>
+  </section>
 </template>
 
 <style scoped>
 body {
-  background-image: url(/portfolio/images/video.png);
+  background-image: url(/src/img/video.png);
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
   background-size:  cover;
+}
+
+section {
+  padding-top:70px;
 }
 
 .arrow {
@@ -135,7 +171,7 @@ body {
 }
 
 #about img {
-  margin-top:20px;
+  margin:20px 0 50px 0;
 }
 
 h2 {
@@ -152,7 +188,7 @@ h2 {
   text-align: center;
 }
 #about2 img {
-  margin-top:40px;
+   margin:40px 0 50px 0;
 }
 
 /* Medie Queries */

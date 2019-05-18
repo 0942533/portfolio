@@ -1,7 +1,7 @@
 <template>
   <div
     class="vsm-item"
-    :class="[{'first-item' : firstItem}, {'open-item' : show}, {'active-item' : active}, {'parent-active-item' : childActive}]"
+    :class="[{'first-item' : firstItem}, {'active-item' : active}]"
     @mouseenter="mouseEnter($event)"
   >
     <template v-if="isRouterLink">

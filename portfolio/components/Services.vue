@@ -5,9 +5,9 @@
     </b-row>
 
     <b-row id="pic-services">
-      <b-col><div sm="4" class="block animated fadeIn delay-2s"><img src="/portfolio/images/services/diensten_1.png"></div></b-col>
-      <b-col><div sm="4" class="block2 animated fadeIn delay-2s"><img src="/portfolio/images/services/diensten_2.png"></div></b-col>
-      <b-col><div sm="4" class="block3 animated fadeIn delay-2s"><img src="/portfolio/images/services/diensten_3.png"></div></b-col>
+      <b-col><div sm="4" class="block animated fadeIn delay-2s"><img src="/src/img/services/diensten_1.png"></div></b-col>
+      <b-col><div sm="4" class="block2 animated fadeIn delay-2s"><img src="/src/img/services/diensten_2.png"></div></b-col>
+      <b-col><div sm="4" class="block3 animated fadeIn delay-2s"><img src="/src/img/services/diensten_3.png"></div></b-col>
     </b-row>
   </b-container>
 </template>
@@ -15,6 +15,7 @@
 <style lang="scss" scoped>
 #services {
   width:80%!important;
+  padding-top:70px;
 }
 
 #services h1 {

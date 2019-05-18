@@ -4,9 +4,6 @@
       <router-link
         class="vsm-link"
         :to="item.href"
-        :disabled="item.disabled"
-        :event="item.disabled ? '' : 'click'"
-        @click.native="clickEvent($event, true)"
       >
         <!-- Show icons -->
         <i

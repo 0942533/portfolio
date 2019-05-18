@@ -19,10 +19,8 @@
       <sidebar-menu
         :menu="menu"
         :collapsed="collapsed"
-        :theme="selectedTheme"
         :show-one-child="true"
         @collapse="onCollapse"
-        @itemClick="onItemClick"
       />
   </div> <!-- End menu -->
 
@@ -94,7 +92,7 @@
   }
 
   #portfolio {
-    padding-top:70px;
+    // padding-top:70px;
     padding-left: 350px;
   }
   #portfolio.collapsed {

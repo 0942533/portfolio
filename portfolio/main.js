@@ -6,6 +6,9 @@ Vue.use(BootstrapVue)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+
 import VueRouter from 'vue-router'
 import VueSidebarMenu from '../src/index'
 
@@ -13,11 +16,8 @@ import About from './components/About.vue'
 import Services from './components/Services.vue'
 import Portfolio from './components/Portfolio.vue'
 import Contact from './components/Contact.vue'
-import details from './components/details.vue'
-
-import Web1 from './components/projects/webdesign/Web1.vue'
-import Web2 from './components/projects/webdesign/Web2.vue'
-
+import Details from './components/Details.vue'
+import Details2 from './components/Details2.vue'
 
 import { defaultCipherList } from 'constants';
 
@@ -47,19 +47,14 @@ const router = new VueRouter({
       component: Contact
     },
     {
-      path: '/web1',
-      name: 'Web1',
-      component: Web1
-    },
-    {
-      path: '/web2',
-      name: 'Web2',
-      component: Web2
-    },
-    {
       path: '/details',
-      name: 'details',
-      component: details
+      name: 'Details',
+      component: Details
+    },
+    {
+      path: '/details2',
+      name: 'Details2',
+      component: Details2
     }
   ]
 })
