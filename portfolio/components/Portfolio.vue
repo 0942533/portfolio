@@ -37,31 +37,31 @@ export default {
       projects:[
       {
         projectId:1,
-        number: "-01",
-        projectTitle1:"Cherlloyd",
-        projectTitle2:"Dutch",
-        image     : "src/img/portfolio/webdesign/webdesign_1.png",
+        number:"-01",
+        projectTitle1:"Bij",
+        projectTitle2:"Assie",
+        image      : "src/img/portfolio/webdesign/webdesign_1.png"
       },
       {
         projectId:2,
         number:"-02",
-        projectTitle1:"Bij",
-        projectTitle2:"Assie",
+        projectTitle1:"Lotties",
+        projectTitle2:"&nbsp;",
         image      : "src/img/portfolio/webdesign/webdesign_2.png"
       },
       {
         projectId:3,
         number:"-03",
-        projectTitle1:"Lotties",
+        projectTitle1:"Cartoons",
         projectTitle2:"&nbsp;",
         image      : "src/img/portfolio/webdesign/webdesign_3.png"
       },
       {
         projectId:4,
-        number:"-04",
-        projectTitle1:"Cartoons",
-        projectTitle2:"&nbsp;",
-        image      : "src/img/portfolio/webdesign/webdesign_4.png"
+        number: "-04",
+        projectTitle1:"Cherlloyd",
+        projectTitle2:"Dutch",
+        image     : "src/img/portfolio/webdesign/webdesign_4.png",
       },
       
       {

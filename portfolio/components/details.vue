@@ -1,6 +1,6 @@
 <template>
     <div class="container details">
-        <div v-for="(project,index) in projects" :key="index">
+        <div v-for="(project,index) in projects" :key="index" class="detail-project">
             <div v-if="proId == project.projectId">
 
                 <header>
@@ -18,8 +18,8 @@
                                 <strong id="framework">Framework:</strong> {{project.framework}}<br/>
                             </p>
 
-                            <a :href="project.href1" target="blank"><button>BEKIJK PROJECT</button></a>
-                            <a :href="project.href2" target="blank"><button>GITHUB</button></a>
+                            <a :href="project.href1" target="blank" class="btn-project"><button>BEKIJK PROJECT</button></a>
+                            <a :href="project.href2" target="blank" class="btn-project"><button>GITHUB</button></a>
                         </b-col>
                     </b-row>
                 </header>
@@ -109,54 +109,6 @@
                     {
                         projectId:1,
                         type:"webdesign • branding • ux",
-
-                        projectTitle:"CherLloyd_dutch",
-                        description:"Een webapplicatie met het laatste nieuws, muziek, foto’s en video’s van de geweldige zangeres, rapper en songwriter genaamd Cher Lloyd.",
-                        role:"Ontwerp, front-end + back-end",
-                        client:"Eigen project",
-                        language: "HTML5, CSS, PHP, Javascript",
-                        cms: "Wordpress",
-                        framework: "-",
-                        href1: "",
-                        href2: "",
-                        title1:"Probleemstelling",
-                        trouble: "De artiest genaamd Cher Lloyd is in vele delen van de wereld nog vrijwel onbekend. Uit onderzoek is gebleken dat dit te maken heeft met de manier waarop Cher Lloyd wordt gepromoot. Zo zijn bijvoorbeeld vele websites over Cher Lloyd verouderd. Dit heeft als gevolg dat zowel de oude als de nieuwe fans geen plek hebben waar ze terecht kunnen voor informatie over Cher Lloyd.",
-                        title2:"Doelen",
-                        goals: [
-                            { text: "Promotie(internationaal) artiest Cher Lloyd verbeteren." },
-                            { text: "Fans op de hoogte houden van het laatste nieuws, muziek, foto's en concerten." },
-                            { text: "Fans een betrokken gevoel geven." },
-                            { text: "Het promotiemiddel moet de persoonlijkheid van Cher Lloyd uistralen." }
-                        ],
-
-                        image1       : "src/img/portfolio/webdesign/web_1_1.png",
-                        titleRight1:"Verbeteren promotie",
-                        projectDescr1: "Ik heb besloten om hiervoor een webapplicatie te ontwikkelen. Waarom? Uit onderzoek is gebleken dat de meeste fans van Cher Lloyd tussen de 14 en 21 jaar oud zijn. Deze doelgroep wordt ook wel ‘jongeren' genoemd. De jongeren leven tegenwoordig in de media. Vraag ze of hun Facebook-vrienden ook hun echte vrienden zijn en ze kijken je verbaasd aan. Voor jongeren is er bijna geen scheiding meer tussen de offline en online wereld. Daarom is een webapplicatie ook een perfect hulpmiddel om deze doelgroep te bereiken.",
-                        
-                        image2     : "src/img/portfolio/webdesign/web_1_2.png",
-                        titleLeft1:"Extra promotie",
-                        projectDescr2: "Ter promotie van de website heb ik een sweater en stickers ontworpen en deze laten drukken.",
-
-                        image3      : "src/img/portfolio/webdesign/web_1_3.png",
-                        // titleRight2: "",
-                        // projectDescr3:"",
-
-                        image4       : "src/img/portfolio/webdesign/web_1_4.png",
-                        titleLeft2: "Fans op de hoogte houden",
-                        projectDescr4: "Op de webapplicatie worden verschillende items aangeboden zoals nieuws, muziek/video's en een gallerij met de laatste foto's van Cher Lloyd.",
-
-                        image5       : "src/img/portfolio/webdesign/web_1_5.png",
-                        titleRight3: "Betrokkenheid",
-                        projectDescr5: "Fans van Cher Lloyd zijn zoveel mogelijk bij het ontwikkel proces betrokken. Hierdoor heb ik samen met hen een plek kunnen creëeren waar een gevoel van eenheid ontstaat.",
-
-                        image6     : "src/img/portfolio/webdesign/web_1_6.png",
-                        titleLeft3: "Persoonlijkheid Cher Lloyd",
-                        projectDescr6: "De video op de homepagina van de webapplicatie, geeft een goed beeld van wie Cher Lloyd precies is en wat zij doet. Daarnaast is er in de applicatie een tijdlijn te vinden met alle belangrijke punten uit Cher Lloyd's carrière. Hierdoor zullen vooral de nieuwe fans het gevoel krijgen dat ze niets hebben gemist. <br /><br /> <strong>Kleuren</strong> <br /> Cher Lloyd is een vrouwelijke artiest. Daarom is er in de webapplicatie gebruik gemaakt van de kleur paars. Dit straalt namelijk vrouwelijkheid uit. Daarnaast is er uit onderzoek gebleken dat het grootste deel van de fans van Cher Lloyd vrouwen zijn."
-                   },
-
-                    {
-                        projectId:2,
-                        type:"webdesign • branding • ux",
                         projectTitle:"Bij Assie",
                         description:"Een webapplicatie over de vintage winkel Bij Assie, waar je eenvoudig een workshop kunt reserveren via een reserveringssysteem.",
                         role:"Ontwerp, front-end + back-end",
@@ -203,7 +155,7 @@
                     },
 
                     {
-                        projectId:3,
+                        projectId:2,
                         type:"webdesign",
                         projectTitle:"Lotties",
                         description:"Een webapplicatie met de leukste gelegenheidskaarten en een volledig CRUD systeem.",
@@ -213,7 +165,7 @@
                         language: "HTML5, Sass, PHP, Javascript",
                         cms: "Zelf gemaakt CMS systeem",
                         framework: "Laravel",
-                        href1: "",
+                        href1: "https://youtu.be/qEBe6Ddwab8",
                         href2: "https://github.com/0942533/PRG05-Lotties",
 
                         title1:"Opdracht",
@@ -250,7 +202,7 @@
                    },
 
                     {
-                        projectId:4,
+                        projectId:3,
                         type:"full stack",
 
                         projectTitle:"Cartoons",
@@ -290,8 +242,55 @@
                         image4     : "src/img/portfolio/webdesign/web_4_4.png",
                         titleLeft2: "CRUD systeem",
                         projectDescr4: "Aan de lijst met cartoons is een CRUD systeem toegevoegd. Hierdoor is het mogelijk om een cartoon toe te voegen, uit te lezen, te updaten en te verwijderen."
-                    }
+                    },
 
+                    {
+                        projectId:4,
+                        type:"webdesign • branding • ux",
+
+                        projectTitle:"CherLloyd_dutch",
+                        description:"Een webapplicatie met het laatste nieuws, muziek, foto’s en video’s van de geweldige zangeres, rapper en songwriter genaamd Cher Lloyd.",
+                        role:"Ontwerp, front-end + back-end",
+                        client:"Eigen project",
+                        language: "HTML5, CSS, PHP, Javascript",
+                        cms: "Wordpress",
+                        framework: "-",
+                        // href1: "",
+                        // href2: "",
+                        title1:"Probleemstelling",
+                        trouble: "De artiest genaamd Cher Lloyd is in vele delen van de wereld nog vrijwel onbekend. Uit onderzoek is gebleken dat dit te maken heeft met de manier waarop Cher Lloyd wordt gepromoot. Zo zijn bijvoorbeeld vele websites over Cher Lloyd verouderd. Dit heeft als gevolg dat zowel de oude als de nieuwe fans geen plek hebben waar ze terecht kunnen voor informatie over Cher Lloyd.",
+                        title2:"Doelen",
+                        goals: [
+                            { text: "Promotie(internationaal) artiest Cher Lloyd verbeteren." },
+                            { text: "Fans op de hoogte houden van het laatste nieuws, muziek, foto's en concerten." },
+                            { text: "Fans een betrokken gevoel geven." },
+                            { text: "Het promotiemiddel moet de persoonlijkheid van Cher Lloyd uistralen." }
+                        ],
+
+                        image1       : "src/img/portfolio/webdesign/web_1_1.png",
+                        titleRight1:"Verbeteren promotie",
+                        projectDescr1: "Ik heb besloten om hiervoor een webapplicatie te ontwikkelen. Waarom? Uit onderzoek is gebleken dat de meeste fans van Cher Lloyd tussen de 14 en 21 jaar oud zijn. Deze doelgroep wordt ook wel ‘jongeren' genoemd. De jongeren leven tegenwoordig in de media. Vraag ze of hun Facebook-vrienden ook hun echte vrienden zijn en ze kijken je verbaasd aan. Voor jongeren is er bijna geen scheiding meer tussen de offline en online wereld. Daarom is een webapplicatie ook een perfect hulpmiddel om deze doelgroep te bereiken.",
+                        
+                        image2     : "src/img/portfolio/webdesign/web_1_2.png",
+                        titleLeft1:"Extra promotie",
+                        projectDescr2: "Ter promotie van de website heb ik een sweater en stickers ontworpen en deze laten drukken.",
+
+                        image3      : "src/img/portfolio/webdesign/web_1_3.png",
+                        // titleRight2: "",
+                        // projectDescr3:"",
+
+                        image4       : "src/img/portfolio/webdesign/web_1_4.png",
+                        titleLeft2: "Fans op de hoogte houden",
+                        projectDescr4: "Op de webapplicatie worden verschillende items aangeboden zoals nieuws, muziek/video's en een gallerij met de laatste foto's van Cher Lloyd.",
+
+                        image5       : "src/img/portfolio/webdesign/web_1_5.png",
+                        titleRight3: "Betrokkenheid",
+                        projectDescr5: "Fans van Cher Lloyd zijn zoveel mogelijk bij het ontwikkel proces betrokken. Hierdoor heb ik samen met hen een plek kunnen creëeren waar een gevoel van eenheid ontstaat.",
+
+                        image6     : "src/img/portfolio/webdesign/web_1_6.png",
+                        titleLeft3: "Persoonlijkheid Cher Lloyd",
+                        projectDescr6: "De video op de homepagina van de webapplicatie, geeft een goed beeld van wie Cher Lloyd precies is en wat zij doet. Daarnaast is er in de applicatie een tijdlijn te vinden met alle belangrijke punten uit Cher Lloyd's carrière. Hierdoor zullen vooral de nieuwe fans het gevoel krijgen dat ze niets hebben gemist. <br /><br /> <strong>Kleuren</strong> <br /> Cher Lloyd is een vrouwelijke artiest. Daarom is er in de webapplicatie gebruik gemaakt van de kleur paars. Dit straalt namelijk vrouwelijkheid uit. Daarnaast is er uit onderzoek gebleken dat het grootste deel van de fans van Cher Lloyd vrouwen zijn."
+                   }
 				]
 			}
 		}	
@@ -315,6 +314,10 @@
 
     section {
         background-color:rgba(255, 255, 255, 0.09);
+    }
+
+    .detail-project:nth-child(4) .btn-project{
+        display:none;
     }
 
     h1 {

@@ -18,7 +18,7 @@
               <p>
               <a href="https://www.linkedin.com/in/lotte-arnoldussen-827287149/" target="blank" class="fab fa-linkedin"></a>
               <a href="https://github.com/0942533" target="blank" class="fab fa-github-square"></a>
-              <a href="" target="blank" class="fas fa-file-pdf"></a>
+              <a href="src/img/curriculum_vitae_lotte_arnoldussen.pdf" target="blank" class="fas fa-file-pdf"></a>
               </p>
             </div>
           </div>
