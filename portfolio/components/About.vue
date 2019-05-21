@@ -5,7 +5,7 @@
           <div class="arrow bounce">
             <li class="fa fa-arrow-down fa-2x" href="#"></li>
           </div>
-          <video src="/src/img/timelapse.mp4" autoplay="true" loop="true"></video>
+          <video src="/src/img/videolotte.mp4" autoplay="true" loop="true"></video>
         </div>
       </div>
 
@@ -83,7 +83,6 @@
 
 <style scoped>
 body {
-  background-image: url(/src/img/video.png);
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
